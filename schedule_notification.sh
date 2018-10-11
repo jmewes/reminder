@@ -10,4 +10,4 @@ function sleep_until {
 }
 
 sleep_until $REMINDER_TIMER
-notify-send "Reminder" $REMINDER_TEXT
+notify-send  -u critical -t 0 "Reminder" $REMINDER_TEXT
