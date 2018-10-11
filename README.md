@@ -8,6 +8,10 @@
 ```
 sudo apt-get install libnotify-bin
 ```
+`gedit ~/.bashrc`
+```
+PATH="~/src/experimental-software/reminder:$PATH"
+```
 
 ### MacOS
 
