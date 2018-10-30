@@ -11,6 +11,6 @@ else
   REMINDER_TIMESTAMP=$(($(date +%s) + ((${REMINDER_TIME} * 60))))
 fi
 
-${SCRIPT_DIR}/schedule_notification.sh ${REMINDER_TIMESTAMP} ${REMINDER_TEXT} &
-disown
-
+(
+  ${SCRIPT_DIR}/schedule_notification.sh ${REMINDER_TIMESTAMP} ${REMINDER_TEXT}
+)&

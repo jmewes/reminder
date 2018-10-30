@@ -10,4 +10,9 @@ function sleep_until {
 }
 
 sleep_until $REMINDER_TIMESTAMP
-notify-send  -u critical -t 0 "Reminder" $REMINDER_TEXT
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    terminal-notifier -title "Reminder" -message "$REMINDER_TEXT"
+else
+    notify-send  -u critical -t 0 "Reminder" $REMINDER_TEXT
+fi
