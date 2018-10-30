@@ -1,6 +1,8 @@
 
 # Reminder
 
+https://twitter.com/CommitStrip/status/1056968431369625605
+
 ## Setup
 
 ### Debian
@@ -31,6 +33,12 @@ reminder 25
 
 ```
 reminder 11:55
+```
+
+### Show all scheduled reminders
+
+```
+ps aux | grep "notification"
 ```
 
 ### Kill all scheduled reminders
