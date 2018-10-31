@@ -54,3 +54,4 @@ kill $(ps aux | grep 'schedule_notification.sh' | awk '{print $2}')
 - https://unix.stackexchange.com/questions/197748/is-there-a-desktop-notification-that-stays-shown-until-i-click-it
 - https://stackoverflow.com/a/3510850/2339010
 - https://stackoverflow.com/a/13059218/2339010
+- Stretchly, Workrave
