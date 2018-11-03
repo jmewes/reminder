@@ -3,6 +3,8 @@
 
 The purpose of this tools is to have a very quick and easy way for setting reminders. It can be used, e.g. for setting reminders for work breaks or setting a time box for Twitter surfing.
 
+Currently only Debian/Ubuntu and MacOS are officially supported.
+
 ## Setup
 
 ### Debian
