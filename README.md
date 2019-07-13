@@ -7,11 +7,15 @@ Currently only Debian/Ubuntu and MacOS are officially supported.
 
 ## Setup
 
-### Debian
+### Debian / Ubuntu
 
 ```
 sudo apt-get install libnotify-bin
+
+cd ~/src/experimental-software
+git clone git@github.com:experimental-software/reminder.git
 ```
+
 `gedit ~/.bashrc`
 ```
 PATH="~/src/experimental-software/reminder:$PATH"
