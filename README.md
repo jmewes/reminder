@@ -57,11 +57,19 @@ PATH="~/src/experimental-software/reminder:$PATH"
 reminder 25
 ```
 
+### Open a reminder with a message in X minutes
+
+```
+reminder 25 "Take a break"
+```
+
 ### Open a reminder at a given time
 
 ```
 reminder 11:55
 ```
+
+
 
 ### Show all scheduled reminders
 

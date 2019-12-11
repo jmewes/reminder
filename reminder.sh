@@ -10,4 +10,4 @@ if [[ ! "${REMINDER_TIME}" = *":"*  ]]; then
   REMINDER_TIME=$(date -d @${REMINDER_TIME_IN_SECONDS} '+%H:%M')
 fi
 
-nohup ${SCRIPT_DIR}/schedule_notification.sh ${REMINDER_TIME} ${REMINDER_TEXT} > /dev/null 2>&1 &
+nohup ${SCRIPT_DIR}/schedule_notification.sh ${REMINDER_TIME} "${REMINDER_TEXT}" > /dev/null 2>&1 &
