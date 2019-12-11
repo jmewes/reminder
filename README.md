@@ -3,29 +3,51 @@
 
 The purpose of this tools is to have a very quick and easy way for setting reminders. It can be used, e.g. for setting reminders for work breaks or setting a time box for Twitter surfing.
 
-Currently only Debian/Ubuntu and MacOS are officially supported.
-
 ## Setup
+
+Currently only Debian/Ubuntu and MacOS are officially supported.
 
 ### Debian / Ubuntu
 
+The following dependencies need to be installed to run `reminder` on Linux:
+
+#### [libnotify](https://github.com/GNOME/libnotify)
+
 ```
 sudo apt-get install libnotify-bin
-
-cd ~/src/experimental-software
-git clone git@github.com:experimental-software/reminder.git
-```
-
-`gedit ~/.bashrc`
-```
-PATH="~/src/experimental-software/reminder:$PATH"
 ```
 
 ### MacOS
 
-- GNU core utils
+The following dependencies need to be installed to run `reminder` on MacOS:
 
-https://stackoverflow.com/a/12597369/2339010
+#### [terminal-notifier](https://github.com/julienXX/terminal-notifier)
+
+```
+brew install terminal-notifier
+```
+
+#### [GNU core utils](https://formulae.brew.sh/formula/coreutils)
+
+```
+brew install coreutils
+```
+
+### Installation
+
+When the dependencies required for your system are installed, you can
+install `reminder` by cloning the Git repository and putting its directory
+on the binary path:
+
+```
+cd ~/src/experimental-software
+git clone git@github.com:experimental-software/reminder.git
+```
+
+`vim ~/.bashrc` or `vim ~/.bash_profile`
+```
+PATH="~/src/experimental-software/reminder:$PATH"
+```
 
 ## Usage
 
