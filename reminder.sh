@@ -55,6 +55,7 @@ if [[ "${ACTION}" == "add" ]]; then
 fi
 
 if [[ "${ACTION}" == "list" ]]; then
+    which python > /dev/null || { echo "python not installed." ; exit 1 ; }
     python "${SCRIPT_DIR}/list_notifications.py"
 fi
 

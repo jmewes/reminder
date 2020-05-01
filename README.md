@@ -3,15 +3,9 @@
 
 The purpose of this tools is to have a very quick and easy way for setting reminders. It can be used, e.g. for setting reminders for work breaks or setting a time box for Twitter surfing.
 
-## Setup
+## Dependencies
 
 Currently only Debian/Ubuntu and MacOS are officially supported.
-
-### Common
-
-```
-pip install psutil
-```
 
 ### Debian / Ubuntu
 
@@ -60,33 +54,25 @@ PATH="~/src/experimental-software/reminder:$PATH"
 ### Open a reminder in X minutes
 
 ```
-reminder 25
+reminder add 25
 ```
 
 ### Open a reminder with a message in X minutes
 
 ```
-reminder 25 "Take a break"
+reminder add 25 "Take a break"
 ```
-
-### Open a reminder at a given time
-
-```
-reminder 11:55
-```
-
-
 
 ### Show all scheduled reminders
 
 ```
-ps aux | grep "notification"
+reminder list
 ```
 
-### Kill all scheduled reminders
+### Stop scheduled reminder
 
 ```
-kill $(ps aux | grep 'schedule_notification.sh' | awk '{print $2}')
+reminder stop <pid>
 ```
 
 ## References
