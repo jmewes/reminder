@@ -7,6 +7,12 @@ The purpose of this tools is to have a very quick and easy way for setting remin
 
 Currently only Debian/Ubuntu and MacOS are officially supported.
 
+### Common
+
+```
+pip install psutil
+```
+
 ### Debian / Ubuntu
 
 The following dependencies need to be installed to run `reminder` on Linux:

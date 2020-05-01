@@ -54,4 +54,10 @@ if [[ "${ACTION}" == "add" ]]; then
     nohup ${SCRIPT_DIR}/schedule_notification.sh -t ${REMINDER_TIME} -m "${REMINDER_TEXT}" -u "${REMINDER_URL}" > /dev/null 2>&1 &
 fi
 
+if [[ "${ACTION}" == "list" ]]; then
+    python "${SCRIPT_DIR}/list_notifications.py"
+fi
 
+if [[ "${ACTION}" == "stop" ]]; then
+    kill -9 $2
+fi
