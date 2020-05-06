@@ -5,13 +5,13 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 usage () {
      cat << EOF
 DESCRIPTION:
-The purpose of this tool is to display popup notifications at specific times.
+  The purpose of this tool is to display popup notifications at specific times.
 
 SYNOPSIS:
-$0 add <time> <message> [<url>]
-$0 list
-$0 stop <pid>
-$0 -h
+  reminder add <time> <message> [<url>]
+  reminder list
+  reminder stop <pid>
+  reminder -h
 
 ACTIONS:
   add       Add a new reminder
@@ -21,7 +21,7 @@ ACTIONS:
 OPTIONS:
   <time>    The time at which the popup notice is to be open in 24h format (HH:MM), e.g. 15:25.
   <message> The message to be displayed in the popup notice.
-  <url>     The URL to be linked in the popup notice. (Currently only supported on MacOS.)
+  <url>     The URL to be opened. On Linux the URL will open automatically with the default browser. On MacOS the URL will be rendered as link in the popup notification.
   <pid>     The operating system process id of the scheduled reminder.
   -h        Show this message.
 EOF
