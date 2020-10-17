@@ -43,6 +43,10 @@ if [[ "${ACTION}" == "add" ]]; then
       REMINDER_TIME_IN_SECONDS=$(($(date +%s) + ((${REMINDER_TIME} * 60))))
       REMINDER_TIME=$(date -d @${REMINDER_TIME_IN_SECONDS} '+%H:%M')
     fi
+    
+    if [[ -z "${REMINDER_TEXT}" ]]; then
+        REMINDER_TEXT=" "
+    fi
 
     if [[ -n "${REMINDER_URL}" ]]; then
         if [[ ! "${REMINDER_URL}" = http* ]]; then
