@@ -63,6 +63,12 @@ reminder add 25
 reminder add 25 "Take a break"
 ```
 
+### Open a reminder with a link
+
+```
+reminder add 15 "Check test results" "https://jenkins"
+```
+
 ### Show all scheduled reminders
 
 ```
