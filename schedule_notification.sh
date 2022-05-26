@@ -1,5 +1,9 @@
 #!/bin/bash
 
+which python3 > /dev/null || { echo "python3 not installed." ; exit 1 ; }
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
 usage () {
      cat << EOF
 DESCRIPTION:
@@ -45,15 +49,7 @@ if [[ -z ${TIME} ]]; then
     exit 1
 fi
 
-function sleep_until {
-    seconds=$(( $1 - $(date +%s) ))
-    echo "[Debug] $(date '+%H:%M:%S') : Sleeping for $seconds seconds"
-    sleep $seconds
-}
-
-REMINDER_TIMESTAMP=$(date -d "${TIME}" +%s)
-
-sleep_until $REMINDER_TIMESTAMP
+sleep $(${SCRIPT_DIR}/lib/seconds_until_timestamp.py ${TIME})
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     if [[ -n ${URL} ]]; then
