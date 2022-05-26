@@ -1,5 +1,7 @@
 #!/bin/bash
 
+which python3 > /dev/null || { echo "python3 not installed." ; exit 1 ; }
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 usage () {
@@ -43,7 +45,7 @@ if [[ "${ACTION}" == "add" ]]; then
       REMINDER_TIME_IN_SECONDS=$(($(date +%s) + ((${REMINDER_TIME} * 60))))
       REMINDER_TIME=$(date -d @${REMINDER_TIME_IN_SECONDS} '+%H:%M')
     fi
-    
+
     if [[ -z "${REMINDER_TEXT}" ]]; then
         REMINDER_TEXT=" "
     fi
@@ -60,8 +62,7 @@ if [[ "${ACTION}" == "add" ]]; then
 fi
 
 if [[ "${ACTION}" == "list" ]]; then
-    which python > /dev/null || { echo "python not installed." ; exit 1 ; }
-    python "${SCRIPT_DIR}/list_notifications.py"
+    ${SCRIPT_DIR}/lib/list_notifications.py
     exit 0
 fi
 

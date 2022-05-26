@@ -5,7 +5,10 @@ The purpose of this tools is to have a very quick and easy way for setting remin
 
 ## Dependencies
 
-Currently only Debian/Ubuntu and MacOS are officially supported.
+### System
+
+- Ubuntu or macOS
+- Python3
 
 ### Debian / Ubuntu
 
