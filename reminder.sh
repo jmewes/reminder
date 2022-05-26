@@ -62,7 +62,6 @@ if [[ "${ACTION}" == "add" ]]; then
 fi
 
 if [[ "${ACTION}" == "list" ]]; then
-    
     ${SCRIPT_DIR}/lib/list_notifications.py
     exit 0
 fi
