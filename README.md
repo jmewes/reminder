@@ -30,12 +30,6 @@ The following dependencies need to be installed to run `reminder` on MacOS:
 brew install terminal-notifier
 ```
 
-#### [GNU core utils](https://formulae.brew.sh/formula/coreutils)
-
-```
-brew install coreutils
-```
-
 ### Installation
 
 When the dependencies required for your system are installed, you can

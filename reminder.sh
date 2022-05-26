@@ -40,11 +40,8 @@ if [[ "${ACTION}" == "add" ]]; then
     REMINDER_TIME=$2
     REMINDER_TEXT=$3
     REMINDER_URL=$4
-
-    if [[ ! "${REMINDER_TIME}" = *":"*  ]]; then
-      REMINDER_TIME_IN_SECONDS=$(($(date +%s) + ((${REMINDER_TIME} * 60))))
-      REMINDER_TIME=$(date -d @${REMINDER_TIME_IN_SECONDS} '+%H:%M')
-    fi
+    
+    REMINDER_TIME=$(${SCRIPT_DIR}/lib/to_HH:SS.py ${REMINDER_TIME})
 
     if [[ -z "${REMINDER_TEXT}" ]]; then
         REMINDER_TEXT=" "
