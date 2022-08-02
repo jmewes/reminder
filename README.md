@@ -1,7 +1,7 @@
 
 # Reminder
 
-The purpose of this tools is to have a very quick and easy way for setting reminders. It can be used, e.g. for setting reminders for work breaks or setting a time box for Twitter surfing.
+The purpose of this tools is to have a very quick and easy way for setting reminders. It can be used, e.g. for setting reminders for work breaks or setting a time box for Internet surfing.
 
 ## Dependencies
 
@@ -12,23 +12,23 @@ The purpose of this tools is to have a very quick and easy way for setting remin
 
 ### Debian / Ubuntu
 
-The following dependencies need to be installed to run `reminder` on Linux:
-
-#### [libnotify](https://github.com/GNOME/libnotify)
+The following additional dependency needs to be installed to open system notifications on Linux:
 
 ```
 sudo apt-get install libnotify-bin
 ```
 
-### MacOS
+(See [libnotify](https://github.com/GNOME/libnotify) for details.)
 
-The following dependencies need to be installed to run `reminder` on MacOS:
+### macOS
 
-#### [terminal-notifier](https://github.com/julienXX/terminal-notifier)
+The following additional dependency needs to be installed to open system notifications on macOS:
 
 ```
 brew install terminal-notifier
 ```
+
+(See [terminal-notifier](https://github.com/julienXX/terminal-notifier) for details.)
 
 ### Installation
 
@@ -48,22 +48,31 @@ PATH="~/src/experimental-software/reminder:$PATH"
 
 ## Usage
 
-### Open a reminder in X minutes
+### Set a reminder in X minutes
 
 ```
 reminder add 25
 ```
 
-### Open a reminder with a message in X minutes
+### Set a reminder with a message in X minutes
 
 ```
 reminder add 25 "Take a break"
 ```
 
-### Open a reminder with a link
+### Set a reminder with a link
 
 ```
-reminder add 15 "Check test results" "https://jenkins"
+reminder add 15 "Check test results" "https://jenkins/job/test"
+```
+
+### Set a reminder at a specific time
+
+If a timestamp in `HOUR:MINUTE` format is provided, a reminder for the specific point in time will be created.
+The `HOUR` needs to be an integer number in the range from 0-23 and the `MINUTE` needs the be an integer number in the range from 0-59.
+
+```
+reminder add 19:58 "Turn on radio"
 ```
 
 ### Show all scheduled reminders
@@ -77,12 +86,3 @@ reminder list
 ```
 reminder stop <pid>
 ```
-
-## References
-- https://stackoverflow.com/questions/645992/bash-sleep-until-a-specific-time-date
-- https://superuser.com/a/483464
-- https://unix.stackexchange.com/questions/3886/difference-between-nohup-disown-and
-- https://unix.stackexchange.com/questions/197748/is-there-a-desktop-notification-that-stays-shown-until-i-click-it
-- https://stackoverflow.com/a/3510850/2339010
-- https://stackoverflow.com/a/13059218/2339010
-- Stretchly, Workrave
