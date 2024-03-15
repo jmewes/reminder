@@ -1,7 +1,6 @@
-
 # Reminder
 
-The purpose of this tools is to have a very quick and easy way for setting reminders. It can be used, e.g. for setting reminders for work breaks or setting a time box for Internet surfing.
+> allows to create scheduled system notifications from the terminal
 
 ## Dependencies
 
@@ -18,7 +17,7 @@ The following additional dependency needs to be installed to open system notific
 sudo apt-get install libnotify-bin
 ```
 
-(See [libnotify](https://github.com/GNOME/libnotify) for details.)
+(see [libnotify](https://github.com/GNOME/libnotify) for details.)
 
 ### macOS
 
@@ -28,7 +27,7 @@ The following additional dependency needs to be installed to open system notific
 brew install terminal-notifier
 ```
 
-(See [terminal-notifier](https://github.com/julienXX/terminal-notifier) for details.)
+(see [terminal-notifier](https://github.com/julienXX/terminal-notifier) for details.)
 
 ### Installation
 
