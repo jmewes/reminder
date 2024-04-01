@@ -27,7 +27,7 @@ The following additional dependency needs to be installed to open system notific
 brew install terminal-notifier
 ```
 
-(see [terminal-notifier](https://github.com/julienXX/terminal-notifier) for details.)
+(See [terminal-notifier](https://github.com/julienXX/terminal-notifier) for details. Also see [apple.stackexchange.com](https://apple.stackexchange.com/questions/9412/how-to-get-a-notification-when-my-commands-are-done/85969#85969) for hints how to configure the alert style to remain open until it gets dismissed.)
 
 ### Installation
 
