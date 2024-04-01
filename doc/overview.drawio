@@ -1,0 +1,74 @@
+<mxfile host="Electron" modified="2024-04-01T09:04:27.537Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="Y6igWbt9GjjYswBFYZzc" version="21.6.1" type="device">
+  <diagram name="Page-1" id="JSyKyJbekfHAQULoK3bA">
+    <mxGraphModel dx="954" dy="1843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3XZytYpG3G0_ke7aty9F-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3XZytYpG3G0_ke7aty9F-5" target="3XZytYpG3G0_ke7aty9F-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-11" value="&amp;nbsp;run in background" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3XZytYpG3G0_ke7aty9F-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.15" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-5" value="reminder.sh" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="400" y="102" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3XZytYpG3G0_ke7aty9F-6" target="3XZytYpG3G0_ke7aty9F-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-8" value="symbolic link&amp;nbsp;for" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3XZytYpG3G0_ke7aty9F-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.2727" y="2" relative="1" as="geometry">
+            <mxPoint x="-2" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-6" value="reminder" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="400" y="-2" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3XZytYpG3G0_ke7aty9F-9" target="3XZytYpG3G0_ke7aty9F-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3XZytYpG3G0_ke7aty9F-9" target="3XZytYpG3G0_ke7aty9F-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-20" value="open system notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3XZytYpG3G0_ke7aty9F-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.4167" y="2" relative="1" as="geometry">
+            <mxPoint x="-13" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3XZytYpG3G0_ke7aty9F-9" target="3XZytYpG3G0_ke7aty9F-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-29" value="calculate delay" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3XZytYpG3G0_ke7aty9F-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.2287" y="4" relative="1" as="geometry">
+            <mxPoint x="4" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3XZytYpG3G0_ke7aty9F-9" target="3XZytYpG3G0_ke7aty9F-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-30" value="delay notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3XZytYpG3G0_ke7aty9F-28" vertex="1" connectable="0">
+          <mxGeometry x="-0.1233" relative="1" as="geometry">
+            <mxPoint y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-9" value="schedule_notification.sh" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="375" y="206" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-16" value="terminal-notifier" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="320" y="326" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-17" value="notify-send" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="500" y="326" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-25" value="seconds_until_timestamp.py" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="627" y="162" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3XZytYpG3G0_ke7aty9F-26" value="sleep" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="667" y="246" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

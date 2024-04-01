@@ -2,6 +2,12 @@
 
 > allows to create scheduled system notifications from the terminal
 
+## Overview
+
+The `reminder` file is a symbolic link for the `reminder.sh` script. When a reminder is created, it runs the `schedule_notification.sh` script as background task. Inside `schedule_notification.sh` a Python script is called to determine the time offset until the requested notification. Then the `schedule_notification.sh` script sleeps for that time offset. Eventually it uses `terminal-notifier` to open the system notification on macOS or `notify-send` on Linux.
+
+![](./doc/overview.drawio.png)
+
 ## Dependencies
 
 ### System
